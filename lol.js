@@ -363,6 +363,12 @@ async function starts() {
                     buffer = await getBuffer(get_result.phone_image)
                     lolteam.sendMessage(from, buffer, image, { quoted: lol, caption: txt })
                     break
+              case 'shortlink2':
+                    if (args.length == 0) return reply(`Example: ${prefix + command} http://api.lolhuman.xyz`)
+                    ini_link = args[0]
+                    ini_buffer = await fetchJson(`http://lolhuman.herokuapp.com/api/shortlink2?apikey=${apikey}&url=${ini_link}`)
+                    reply(ini_buffer.result)
+                    break
 		case 'togif':
                     if ((isMedia && !lol.message.videoMessage || isQuotedSticker)) {
                         const encmedia = isQuotedSticker ? JSON.parse(JSON.stringify(lol).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : lol
