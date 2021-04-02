@@ -36,3 +36,4 @@
 * [`Baileys`](https://github.com/adiwajshing/Baileys)
 * [`Fxc7`](https://github.com/Fxc7)
 * [`LoL-Human`](https://github.com/LoL-Human)
+* [`NandoGay`](https://github.com/Arnando456)
