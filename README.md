@@ -1,5 +1,4 @@
 ## AKU MALING GES:(
-* [`KangTuduh`](https://wa.me/6282158549899)
 
 # Installation
 
