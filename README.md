@@ -12,8 +12,8 @@
 
 ## Cloning 
 ```cmd
-> git clone https://github.com/Pxc7b/botv1
-> cd botv1
+> git clone https://github.com/Pxc7b/LoL-Bot
+> cd LoL-Bot
 ```
 
 ## Install 
