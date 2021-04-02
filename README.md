@@ -37,3 +37,4 @@
 * [`Fxc7`](https://github.com/Fxc7)
 * [`LoL-Human`](https://github.com/LoL-Human)
 * [`NandoGay`](https://github.com/Arnando456)
+* [`Sofyen:V`](https://github.com/SofyanAMV09)
