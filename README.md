@@ -29,6 +29,8 @@ Hello ~ I'm Pxc7<img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blo
 ```cmd
 > npm start
 ```
+</div>
+
 ## INFO TENTANG GW<img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/powerup.gif" width="29px">
 
 * [`Youtube`](https://youtube.com/channel/UC85BV5PuFNdhEF1JIR6mKjw)
