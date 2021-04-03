@@ -21,7 +21,7 @@ Hello ~ I'm Pxc7<img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blo
 
 ## Cloning 
 ```cmd
-> git clone https://github.com/Pxc7b/LoL-Bot
+> git clone https://github.com/Pxc7/LoL-Bot
 > cd LoL-Bot
 ```
 
@@ -30,7 +30,7 @@ Hello ~ I'm Pxc7<img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blo
 > npm i
 ```
 
-## Run the botv1
+## Run the LoL-Bot
 ```cmd
 > npm start
 ```
