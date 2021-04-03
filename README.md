@@ -4,6 +4,7 @@ Hello ~ I'm Pxc7<img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blo
 <p align="center">
   <a href="https://github.com/Pxc7/LoL-Bot#installation">Installation</a> •
   <a href="https://github.com/Pxc7/LoL-Bot#thanks-to">Thanks Too</a> 
+  <a href="#"><img title="LoL-Bot" src="https://img.shields.io/badge/-LoL-Bot-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 
 # _**AKU MALING GES:(**_
