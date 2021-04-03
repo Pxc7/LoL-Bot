@@ -1,7 +1,7 @@
 <div align="center">
 <img src="https://i.ibb.co/GQcDxdZ/IMG-20210329-WA0485.jpg" alt="Pxc7" width="500" />
 
-# _**AKU MALINH GES:(**_
+# _**AKU MALING GES:(**_
 
 # Installation
 
