@@ -1,5 +1,5 @@
 <div align="center">
-## Hello ~ I'm Pxc7<img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="35px">
+Hello ~ I'm Pxc7<img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="35px">
 <img src="https://i.ibb.co/GQcDxdZ/IMG-20210329-WA0485.jpg" alt="Pxc7" width="500" />
 
 # _**AKU MALING GES:(**_
