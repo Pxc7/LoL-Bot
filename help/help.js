@@ -120,6 +120,7 @@ const help = (prefix, pushname2, premi, uptime, tanggal, pepolu ) => {
 ├ • ${prefix}jadwaltv channel
 ├ • ${prefix}jadwaltvnow
 ├ • ${prefix}jadwalbola
+├ • ${prefix}cekspek query
 ├ • ${prefix}heroml hero_name
 ├ • ${prefix}wikipedia query
 ├ • ${prefix}translate kode_negara text
