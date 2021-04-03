@@ -48,3 +48,4 @@ Hello ~ I'm Pxc7<img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blo
 * [`LoL-Human`](https://github.com/LoL-Human)
 * [`NandoGay`](https://github.com/Arnando456)
 * [`Sofyen:V`](https://github.com/SofyanAMV09)
+* [`Rio`](https://github.com/ItzRio-Bruh)
