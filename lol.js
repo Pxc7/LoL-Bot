@@ -342,27 +342,7 @@ async function starts() {
 			    lolteam.sendMessage(from, '*CIE NYIMAK AJE LU*\n' + online.map(v => '- @' + v.replace(/@.+/, '')).join`\n` + `\n*©POWERED BY RIU*`, text, { quoted: lol,
   			  contextInfo: { mentionedJid: online }
 			    })
-				break 
-		case 'spekhp':
-	            query = args.join(" ")
-                    get_result = await fetchJson(`http://lolhuman.herokuapp.com/api/gsmarena?apikey=chotomate09&query=${query}`)
-                    get_result = get_result.result
-                    txt = `Nama : ${get_result.phone_name}\n`
-                    txt += `Network : ${get_result.specification.network.net2g} -  ${get_result.specification.network.net3g} -  ${get_result.specification.network.net4g} -  ${get_result.specification.network.net5g}\n`
-                    txt += `Body : ${get_result.body.dimensions} - ${get_result.body.weight} - ${get_result.body.build} - ${get_result.body.sim} - ${get_result.body.bodyother}\n`
-                    txt += `Display : ${get_result.display.displaytype} - ${get_result.display.displaysize} - ${get_result.display.displayresolution}\n`
-                    txt += `PlatFrom : ${get_result.platform.os} - ${get_result.platform.chipset} - ${get_result.platform.cpu} - ${get_result.platform.gpu}\n`
-                    txt += `Memo : ${get_result.memory.memoryslot} - ${get_result.memory.internalmemory} - ${get_result.memory.memoryother}\n`
-                    txt += `Camera : ${get_result.maincamera.cam1modules} - ${get_result.maincamera.cam1features}\n`
-                    txt += `Selfie : ${get_result.selfiecamera.cam2modules} -  ${get_result.selfiecamera.cam2features} - ${get_result.selfiecamera.cam2video}\n`
-                    txt += `Sound : ${get_result.sound.optionalother}\n`
-                    txt += `Cosms : ${get_result.comms.bluetooth} - ${get_result.comms.gps} - ${get_result.comms.nfc} - ${get_result.comms.radio} - ${get_result.comms.usb}\n`
-                    txt += `Features : ${get_result.features.sensors}\n`
-                    txt += `Batre rambut : ${get_result.battery.batdescription1}\n`
-                    txt += `Misc : ${get_result.misc.colors} - ${get_result.misc.models} - ${get_result.misc.price} - ${get_result.misc.tests} - ${get_result.misc.tbench} - ${get_result.misc.batlife}`
-                    buffer = await getBuffer(get_result.phone_image)
-                    lolteam.sendMessage(from, buffer, image, { quoted: lol, caption: txt })
-                    break
+			break 
               case 'shortlink2':
                     if (args.length == 0) return reply(`Example: ${prefix + command} http://api.lolhuman.xyz`)
                     ini_link = args[0]
