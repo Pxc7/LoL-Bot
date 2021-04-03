@@ -494,7 +494,51 @@ async function starts() {
 					premium.splice(delp, 1)
 					fs.writeFileSync('./database/user/premium.json', JSON.stringify(premium))
 					reply(`Berhasil Menghapus ${oh} Dari Daftar Premium`)
-					break					
+					break	
+                	case 'cekspek':
+                    if (args.length ==0) return reply(`Contoh: ${prefix + command} Rog`)
+                    query = args.join (" ")
+                    get_result = await fetchJson(`http://lolhuman.herokuapp.com/api/gsmarena?apikey=${apikey}&query=${query}`)
+                    get_result = get_result.result
+                    init_txt = `°•°•°•°•°•°•《Spek Hp》•°•°•°•°•°•°\n`
+                    init_txt += `Nama Hp : ${get_result.phone_name}\n`
+                    init_txt += `Jaringan 2G : ${get_result.specification.network.net2g}\n`
+                    init_txt += `Jaringan 3G : ${get_result.specification.network.net3g}\n`
+                    init_txt += `Jaringan 4G : ${get_result.specification.network.net4g}\n`
+                    init_txt += `Jaringan 5G : ${get_result.specification.network.net5g}\n`
+                    init_txt += `Kecepatan Jaringan : ${get_result.specification.network.speed}\n`
+                    init_txt += `Peluncuran : ${get_result.specification.launch.year}\n`
+                    init_txt += `Status : ${get_result.specification.launch.status}\n`
+                    init_txt += `Berat : ${get_result.specification.body.weight}\n`
+                    init_txt += `Body : ${get_result.specification.body.build}\n`
+                    init_txt += `Kartu Sim : ${get_result.specification.body.sim}\n`
+                    init_txt += `Tipe Layar : ${get_result.specification.display.displaytype}\n`
+                    init_txt += `Ukuran Layar : ${get_result.specification.display.displaysize}\n`
+                    init_txt += `Resolusi Layar : ${get_result.specification.display.displayresolution}\n`
+                    init_txt += `System Operasi : ${get_result.specification.platform.os}\n`
+                    init_txt += `Chipset : ${get_result.specification.platform.chipset}\n`
+                    init_txt += `Cpu : ${get_result.specification.platform.cpu}\n`
+                    init_txt += `Gpu : ${get_result.specification.platform.gpu}\n`
+                    init_txt += `Memori : ${get_result.specification.platform.memory}\n`
+                    init_txt += `°•°•°•°•°•°•《Fitur Ponsel》•°•°•°•°•°•°\n`
+                    init_txt += `Wifi : ${get_result.specification.comms.wlan}\n`
+                    init_txt += `Bluetooth : ${get_result.specification.comms.bluetooth}\n`
+                    init_txt += `Gps : ${get_result.specification.comms.gps}\n`
+                    init_txt += `Nfc : ${get_result.specification.comms.nfc}\n`
+                    init_txt += `Sensor : ${get_result.specification.features.sensors}\n`
+                    init_txt += `°•°•°•°•°•°•《Baterai》•°•°•°•°•°•°\n`
+                    init_txt += `Baterai : ${get_result.specification.batdescription1}\n`
+                    init_txt += `Telepon : ${get_result.specification.battalktime1}\n`
+                    init_txt += `Musik : ${get_result.specification.batmusicplayback1}\n`
+                    init_txt += `°•°•°•°•°•°•《Info Lainnya》•°•°•°•°•°•°\n`
+                    init_txt += `Warna : ${get_result.specification.misc.colors}\n`
+                    init_txt += `Model : ${get_result.specification.misc.models}\n`
+                    init_txt += `Benchmark : ${get_result.specification.tests.tbench}\n`
+                    init_txt += `Ketahanan Baterai : ${get_result.specification.tests.batlife}\n`
+                    init_txt += `°•°•°•°•°•°•《Rio Fernanda》•°•°•°•°•°•°\n`
+                    hpnya = await getBuffer(get_result.phone_image)
+                    lolhuman.sendMessage(from, hpnya, image, { quoted: lol, caption: init_txt })
+                    break			
 		case 'setcr':
 					if (!isRegistered) return reply(ind.noregis())
 					if (sender.split("@")[0] != owner) return reply("Command only for owner bot")
